@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RickMortyApp</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_character_details">Hello CharacterDetailsFragment. Arg: %1$s</string>
+
+    <string name="title_character">Character</string>
+    <string name="title_location">Location</string>
+    <string name="title_episode">Episode</string>
+
+    <string name="character_details">Character Details</string>
+    <string name="action_filters">Filters</string>
+    <string name="imagem">Imagem</string>
+</resources>
