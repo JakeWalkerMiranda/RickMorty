@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/White"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    tools:ignore="RtlSymmetry">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/informations_title"
+        android:textSize="@dimen/txt_medium2"
+        android:textColor="@color/BluishGray"
+        android:layout_marginTop="@dimen/fragment_double_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/information_title_gender"
+        android:textSize="@dimen/txt_medium"
+        android:textStyle="bold"
+        android:textColor="@color/VeryDarkBlue"
+        android:layout_marginTop="@dimen/information_title_margin_top"/>
+
+    <TextView
+        android:id="@+id/txtCharacterDetailsGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_small3"
+        android:textColor="@color/DarkGrayishBlue"
+        tools:text="Male"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/Divider"
+        android:layout_marginTop="@dimen/card_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/information_title_origin"
+        android:textSize="@dimen/txt_medium"
+        android:textStyle="bold"
+        android:textColor="@color/VeryDarkBlue"
+        android:layout_marginTop="@dimen/information_info_margin_top"/>
+
+    <TextView
+        android:id="@+id/txtCharacterDetailsOrigin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_small3"
+        android:textColor="@color/DarkGrayishBlue"
+        tools:text="Earth (C-137)"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/Divider"
+        android:layout_marginTop="@dimen/card_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/information_title_type"
+        android:textSize="@dimen/txt_medium"
+        android:textStyle="bold"
+        android:textColor="@color/VeryDarkBlue"
+        android:layout_marginTop="@dimen/information_info_margin_top" />
+
+    <TextView
+        android:id="@+id/txtCharacterDetailsType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_small3"
+        android:textColor="@color/DarkGrayishBlue"
+        tools:text="Unknown"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/Divider"
+        android:layout_marginTop="@dimen/card_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/information_title_location"
+        android:textSize="@dimen/txt_medium"
+        android:textStyle="bold"
+        android:textColor="@color/VeryDarkBlue"
+        android:layout_marginTop="@dimen/information_info_margin_top" />
+
+    <TextView
+        android:id="@+id/txtCharacterDetailsLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_small3"
+        android:textColor="@color/DarkGrayishBlue"
+        tools:text="Earth (Replacement Dimension)"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/Divider"
+        android:layout_marginTop="@dimen/card_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/information_title_episodes"
+        android:textSize="@dimen/txt_medium2"
+        android:textColor="@color/BluishGray"
+        android:layout_marginTop="@dimen/fragment_triple_margin"
+        android:layout_marginBottom="@dimen/fragment_margin"/>
+
+</LinearLayout>

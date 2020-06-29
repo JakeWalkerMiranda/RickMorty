@@ -1,0 +1,29 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fragment_margin">10dp</dimen>
+    <dimen name="fragment_double_margin">20dp</dimen>
+    <dimen name="fragment_triple_margin">30dp</dimen>
+    <dimen name="fragment_height">84dp</dimen>
+    <dimen name="corner_radius">8dp</dimen>
+    <dimen name="card_height">222dp</dimen>
+    <dimen name="card_image_height">140dp</dimen>
+    <dimen name="card_margin">12dp</dimen>
+    <dimen name="card_margin_top">28dp</dimen>
+    <dimen name="txt_small">12sp</dimen>
+    <dimen name="txt_small2">13sp</dimen>
+    <dimen name="txt_small3">14sp</dimen>
+    <dimen name="txt_medium">16sp</dimen>
+    <dimen name="txt_medium2">20sp</dimen>
+    <dimen name="txt_large">34sp</dimen>
+    <dimen name="episode_item_list_height">88dp</dimen>
+    <dimen name="circle_imageview_size">135dp</dimen>
+    <dimen name="circle_imageview_margin_top">19dp</dimen>
+    <dimen name="circle_border_width">5dp</dimen>
+    <dimen name="information_margin_top">17dp</dimen>
+    <dimen name="information_title_margin_top">19dp</dimen>
+    <dimen name="information_info_margin_top">9dp</dimen>
+    <dimen name="fragment_location_margin">8dp</dimen>
+    <dimen name="divider_height">3dp</dimen>
+</resources>

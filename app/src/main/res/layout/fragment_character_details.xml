@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_landing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/VeryLightGray">
+
+        <ImageView
+            android:id="@+id/img_rectangleTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fragment_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rectangle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgCharacterDetailsImage"
+            android:layout_width="@dimen/circle_imageview_size"
+            android:layout_height="@dimen/circle_imageview_size"
+            android:layout_marginTop="@dimen/circle_imageview_margin_top"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="@color/VeryLightGray"
+            app:civ_border_width="@dimen/circle_border_width"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtCharacterDetailsStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fragment_height"
+            android:textSize="@dimen/txt_small"
+            android:textColor="@color/DarkGrayishBlue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_rectangleTop"
+            tools:text="Status"/>
+
+        <TextView
+            android:id="@+id/txtCharacterDetailsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_large"
+            android:textColor="@color/VeryDarkBlue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCharacterDetailsStatus"
+            tools:text="Name"/>
+
+        <TextView
+            android:id="@+id/txtCharacterDetailsSpecies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_small2"
+            android:textColor="@color/BluishGray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCharacterDetailsName"
+            tools:text="SPECIES"/>
+
+        <include
+            android:id="@+id/characterDetailsInformations"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/information_margin_top"
+            layout="@layout/informations_character"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCharacterDetailsSpecies"/>
+
+        <include
+            android:id="@+id/characterDetailsEpisodes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            layout="@layout/recyclerview_episode"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/characterDetailsInformations"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
