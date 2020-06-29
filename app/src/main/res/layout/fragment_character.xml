@@ -15,9 +15,9 @@
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginTop="@dimen/fragment_double_margin"
+            android:layout_marginStart="@dimen/fragment_margin"
+            android:layout_marginEnd="@dimen/fragment_margin"
             android:visibility="gone"/>
 
         <ProgressBar

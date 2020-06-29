@@ -47,7 +47,7 @@ class CharacterAdapter(private val characters: ArrayList<Character>,
             }
 
             itemView.setOnClickListener {
-                listener.onItemClick(characters, adapterPosition)
+                listener.onItemClick(characters)
             }
         }
 
@@ -71,6 +71,6 @@ class CharacterAdapter(private val characters: ArrayList<Character>,
     }
 
     interface OnClickListener {
-        fun onItemClick(details: Character, position: Int)
+        fun onItemClick(character: Character)
     }
 }

@@ -52,7 +52,6 @@ class CharacterDetailsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         model.selectedCharacter.observe(viewLifecycleOwner, Observer<Character> { details ->
-            Toast.makeText(context, details.name, Toast.LENGTH_SHORT).show()
             if (details != null) GlobalScope.launch {
                 callAPI(view, details.id.toString())
             }
@@ -86,10 +85,6 @@ class CharacterDetailsFragment : Fragment() {
                                     imgCharacterDetailsImage.setImageBitmap(resource)
                                 }
                                 override fun onLoadCleared(placeholder: Drawable?) {
-                                    // this is called when imageView is cleared on lifecycle call or for
-                                    // some other reason.
-                                    // if you are referencing the bitmap somewhere else too other than this imageView
-                                    // clear it here as you can no longer have the bitmap
                                     Glide.get(context.context).clearMemory()
                                 }
                             })
@@ -105,9 +100,6 @@ class CharacterDetailsFragment : Fragment() {
                         val newValue = ""
 
                         val range = episodesList.replace(oldValue, newValue)
-
-
-                        Toast.makeText(context.context, range , Toast.LENGTH_LONG).show()
 
                         setupViewModel()
                         setupUI()
@@ -153,7 +145,6 @@ class CharacterDetailsFragment : Fragment() {
                         episodeRecyclerView.visibility = View.VISIBLE
                         progressBar.visibility = View.GONE
                         resource.data?.let { episodes -> retrieveList(episodes) }
-                        //resource.data?.let { characters -> characters }
 
                     }
                     Status.ERROR -> {

@@ -1,7 +1,5 @@
 package br.com.jwm.rickmortyapp.ui.main.character
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
 import br.com.jwm.rickmortyapp.data.repository.MainRepository

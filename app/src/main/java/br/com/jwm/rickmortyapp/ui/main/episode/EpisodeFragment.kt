@@ -68,7 +68,6 @@ class EpisodeFragment : Fragment() {
                         episodeRecyclerView.visibility = View.VISIBLE
                         progressBar.visibility = View.GONE
                         resource.data?.let { episodes -> retrieveList(episodes.results) }
-                        //resource.data?.let { characters -> characters }
 
                     }
                     Status.ERROR -> {

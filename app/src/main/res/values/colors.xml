@@ -4,6 +4,16 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
 
+    <!-- ActionBar -->
     <color name="backgroundActionBar">#FFFFFF</color>
     <color name="titleActionBar">#000000</color>
+
+    <color name="DarkGrayishBlue">#6E798C</color>
+    <color name="VeryDarkBlue">#081F32</color>
+    <color name="BluishGray">#8E8E93</color>
+    <color name="VeryLightGray">#E5E5E5 </color>
+    <color name="White">#FFFFFF </color>
+    <color name="Divider">#0C000000 </color>
+
+
 </resources>

@@ -11,7 +11,6 @@ import java.lang.Exception
 class EpisodeViewModel(private val mainRepository: MainRepository) : ViewModel() {
 
     fun getCharacterEpisodes(range: String) = liveData(Dispatchers.IO) {
-        Log.e("JWM", "Range: $range")
         emit(Resource.loading(data = null))
         try {
             emit(Resource.success(data = mainRepository.getCharacterEpisodes(range)))

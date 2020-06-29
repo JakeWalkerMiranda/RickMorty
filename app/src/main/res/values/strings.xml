@@ -4,11 +4,26 @@
     <string name="previous">Previous</string>
     <string name="hello_character_details">Hello CharacterDetailsFragment. Arg: %1$s</string>
 
-    <string name="title_character">Character</string>
-    <string name="title_location">Location</string>
-    <string name="title_episode">Episode</string>
-
-    <string name="character_details">Character Details</string>
+    <!-- ActionBar -->
     <string name="action_filters">Filters</string>
+
+    <!-- Character -->
+    <string name="title_character">Character</string>
+    <string name="character_details">Character Details</string>
     <string name="imagem">Imagem</string>
+
+    <!-- Character Information -->
+    <string name="information_title_origin">Origin</string>
+    <string name="information_title_type">Type</string>
+    <string name="information_title_location">Location</string>
+    <string name="information_title_episodes">Episodes</string>
+
+    <!-- Location -->
+    <string name="title_location">Location</string>
+
+    <!-- Episode -->
+    <string name="title_episode">Episode</string>
+    <string name="information_title_gender">Gender</string>
+    <string name="informations_title">Informations</string>
+
 </resources>

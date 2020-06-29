@@ -5,7 +5,6 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.GridLayout
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -17,7 +16,6 @@ import br.com.jwm.rickmortyapp.R
 import br.com.jwm.rickmortyapp.data.api.ApiHelper
 import br.com.jwm.rickmortyapp.data.api.RetrofitBuilder
 import br.com.jwm.rickmortyapp.data.model.Character
-import br.com.jwm.rickmortyapp.data.model.CharacterDetails
 import br.com.jwm.rickmortyapp.extensions.navigateWithAnimations
 import br.com.jwm.rickmortyapp.ui.base.SharedViewModel
 import br.com.jwm.rickmortyapp.ui.base.ViewModelFactory
@@ -29,7 +27,6 @@ import kotlinx.android.synthetic.main.fragment_character.*
 class CharacterFragment : Fragment(), CharacterAdapter.OnClickListener{
 
     private lateinit var adapter: CharacterAdapter
-
 
     // ViewModels
     private lateinit var characterViewModel: CharacterViewModel
@@ -70,7 +67,6 @@ class CharacterFragment : Fragment(), CharacterAdapter.OnClickListener{
                         recyclerView.visibility = View.VISIBLE
                         progressBar.visibility = View.GONE
                         resource.data?.let { characters -> retrieveList(characters.results) }
-                        //resource.data?.let { characters -> characters }
 
                     }
                     Status.ERROR -> {
@@ -96,10 +92,8 @@ class CharacterFragment : Fragment(), CharacterAdapter.OnClickListener{
         }
     }
 
-    override fun onItemClick(character: Character, position: Int) {
+    override fun onItemClick(character: Character) {
         model.selectCharacter(character)
-
-        //Navegação
         findNavController().navigateWithAnimations(R.id.action_CharacterFragment_to_CharacterDetailsFragment)
     }
 }
